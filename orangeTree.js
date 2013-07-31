@@ -1,14 +1,35 @@
 //////// Your Code ///////////////////////////////////////////////
 
+function OrangeTree() {
+  var basket = [];
+  this.age = 0;
+  this.height = 0;
+
+  this.hasOranges = function(){
+    this.oranges > 0;  
+  };
+  this.incrementAge = function(){
+    this.age < 100? this.age++ : this.age;
+    this.height < 8? this.height++ : this.height;
+    this.oranges++;
+
+  };
+  this.isAlive = function() {
+
+  }
+
+
+}
+
 
 
 /////// Driver Code /////////////////////////////////////////////
 
 var tree = new OrangeTree();
 
-while (!tree.hasOranges()) {
-  tree.incrementAge();
-}
+// while (!tree.hasOranges()) {
+//   tree.incrementAge();
+// }
 
 console.log("Tree is " + tree.age + " years old and " + tree.height + " feet tall");
 
